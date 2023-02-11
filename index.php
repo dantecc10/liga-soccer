@@ -30,7 +30,7 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="aprende.php">Jugadores</a></li>
                     <li class="nav-item"><a class="nav-link" href="servicios.php">Goleadores</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tablas.html">Tablas generales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tablas.php">Tablas generales</a></li>
                 </ul>
                 <div class="div1-efecto"><a class="btn btn-primary shadow div2-efecto" role="button"
                         href="registro.php">Iniciar sesión</a></div>
