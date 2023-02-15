@@ -5,6 +5,7 @@
 var spanObjetivo = "divTarget";
 var terminar = false;
 while (terminar == false) {
+    setTimeout(function () { }, 3000);
 
     var urlCompuesta;
     var urlVariables = "";// = ("?id=" + id + "&cantidad=" + cantidad + "&operación=" + operación), uriPHP = "php scripts/AltasBajas.php";
