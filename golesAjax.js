@@ -7,7 +7,7 @@ var terminar = false;
 while (terminar == false) {
 
     var urlCompuesta;
-    var urlVariables;// = ("?id=" + id + "&cantidad=" + cantidad + "&operación=" + operación), uriPHP = "php scripts/AltasBajas.php";
+    var urlVariables = "";// = ("?id=" + id + "&cantidad=" + cantidad + "&operación=" + operación), uriPHP = "php scripts/AltasBajas.php";
     urlCompuesta = ("php scripts/muestraGoles.php?pedido=goles");
 
     //Petición AJAX
