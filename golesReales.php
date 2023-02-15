@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <div id="divTarget">
+    <span id="divTarget">
         <?php
         include "php scripts/muestraGoles.php"
         ?>
-    </div>
+    </span>
 </body>
 
 </html>
