@@ -3,7 +3,7 @@
 
 
 var spanObjetivo = "divTarget";
-var golesActuales = parseInt(document.getElementById("divTarget").innerText);
+var golesActuales = parseInt(document.getElementById("divTarget").innerHTML);
 while (golesActuales != 10) {
 
     var urlCompuesta, urlVariables = ("?id=" + id + "&cantidad=" + cantidad + "&operación=" + operación), uriPHP = "php scripts/AltasBajas.php";
