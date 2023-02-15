@@ -12,7 +12,7 @@
 <body>
     <span id="divTarget">
         <?php
-        include "php scripts/muestraGoles.php"
+        include "php scripts/muestraGoles.php";
         ?>
     </span>
 </body>
