@@ -19,7 +19,7 @@ while (golesActuales != 10) {
 
     //Procesamiento AJAX
     xmlhttp.open("GET", urlCompuesta, true);
-    console.log("La cantidad actual de goles es de ");
+    console.log("La cantidad actual de goles es de " + golesActuales);
     console.log("URL: " + urlCompuesta + "\nURL Variables: " + urlVariables);
     //console.log("ModoFiltro: " + ModoFiltro);
     xmlhttp.send();
