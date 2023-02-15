@@ -3,8 +3,8 @@
 
 
 var spanObjetivo = "divTarget";
+var golesActuales = document.getElementById(spanObjetivo).innerHTML;
 while (golesActuales != 10) {
-    var golesActuales = innerHTML;
 
     var urlCompuesta, urlVariables = ("?id=" + id + "&cantidad=" + cantidad + "&operación=" + operación), uriPHP = "php scripts/AltasBajas.php";
     urlCompuesta = ("php scripts/muestraGoles.php?pedido=goles");
