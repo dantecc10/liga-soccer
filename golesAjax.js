@@ -15,12 +15,13 @@ while (terminar == false) {
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById(spanObjetivo).innerHTML = this.responseText;
+
         }
     };
 
     //Procesamiento AJAX
     xmlhttp.open("GET", urlCompuesta, true);
-    console.log("La cantidad actual de goles es de " + golesActuales);
+    console.log("La cantidad actual de goles es de ");
     console.log("URL: " + urlCompuesta + "\nURL Variables: " + urlVariables);
     //console.log("ModoFiltro: " + ModoFiltro);
     xmlhttp.send();
