@@ -13,10 +13,10 @@ function ajax() {
     //Petición AJAX
      var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            //document.getElementById(spanObjetivo).innerHTML = this.responseText;
+/*         if (this.readyState == 4 && this.status == 200) {
+            document.getElementById(spanObjetivo).innerHTML = this.responseText;
 
-        }
+        } */
     };
 
     //Procesamiento AJAX
