@@ -28,4 +28,4 @@ function ajax() {
 }
 }
 
-    setTimeout(ajax(), 3000);
+    setTimeout(ajax(), 10000);
