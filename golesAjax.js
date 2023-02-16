@@ -1,11 +1,10 @@
 //var spanObjetivo = "";
 //var cantidadObjetivoActual = 0;
 
-
-var spanObjetivo = "divTarget";
-var terminar = false;
-while (terminar == false) {
-    setTimeout(function () { }, 3000);
+function ajax() {
+    var spanObjetivo = "divTarget";
+    var terminar = false;
+    while (terminar == false) {
 
     var urlCompuesta;
     var urlVariables = "";// = ("?id=" + id + "&cantidad=" + cantidad + "&operación=" + operación), uriPHP = "php scripts/AltasBajas.php";
@@ -27,3 +26,6 @@ while (terminar == false) {
     //console.log("ModoFiltro: " + ModoFiltro);
     xmlhttp.send();
 }
+}
+
+    setTimeout(ajax(), 3000);
