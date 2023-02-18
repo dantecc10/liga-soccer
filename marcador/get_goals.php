@@ -17,14 +17,13 @@ $sql = "SELECT SUM(goals) as total_goals FROM player_stats";
 
 $result = $conn->query($sql);
 
-//if ($result->num_rows > 0) {
-//    // Output data of each row
-//    while ($row = $result->fetch_assoc()) {
-//        $total_goals = $row["total_goals"];
-//    }
-//} else {
-//    $total_goals = 0;
-//}
-//
-//$conn->close();
-//
+if ($result->num_rows > 0) {
+    // Output data of each row
+    while ($row = $result->fetch_assoc()) {
+        $total_goals = $row["total_goals"];
+    }
+} else {
+    $total_goals = 0;
+}
+
+$conn->close();
