@@ -7,10 +7,10 @@ $dbname = "live_stats";
 
 $conn = new mysqli("localhost", "liga-soccer", "soccerLeague22!!", "soccer_league");
 
-//// Check connection
-//if ($conn->connect_error) {
-//    die("Connection failed: " . $conn->connect_error);
-//}
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 //
 //// SQL query to get the sum of goals
 //$sql = "SELECT SUM(goals) as total_goals FROM player_stats";
