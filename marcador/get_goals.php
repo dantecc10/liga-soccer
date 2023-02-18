@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // SQL query to get the sum of goals
-$sql = "SELECT SUM(goals) as total_goals FROM player_stats";
+$sql = "SELECT SUM(goles) as total_goals FROM test_goles";
 
 $result = $conn->query($sql);
 
