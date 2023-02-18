@@ -5,7 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "live_stats";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli("localhost", "liga-soccer", "soccerLeague22!!", "soccer_league");
 
 // Check connection
 if ($conn->connect_error) {
