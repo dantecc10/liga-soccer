@@ -17,6 +17,7 @@
             };
             xhttp.open("GET", "get_goals.php", true);
             xhttp.send();
+            console.log("Actualizando datos...");
         }
 
         // Call the updateGoals function every 5 seconds
