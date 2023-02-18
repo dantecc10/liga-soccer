@@ -21,6 +21,7 @@ if ($result->num_rows > 0) {
     // Output data of each row
     while ($row = $result->fetch_assoc()) {
         $total_goals = $row["total_goals"];
+        echo $total_goals;
     }
 } else {
     $total_goals = 0;
