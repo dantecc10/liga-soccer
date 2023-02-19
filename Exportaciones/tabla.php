@@ -1,5 +1,5 @@
 <?php
-    include"marcador/get_goals.php";
+    include"marcador\get_goals.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -57,8 +57,8 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td><?php echo $total_goals; ?></td>
-      <td>10</td>
+      <td>Team A</td>
+      <td><?php echo $total_goals;?></td>
       <td>8</td>
       <td>1</td>
       <td>1</td>
