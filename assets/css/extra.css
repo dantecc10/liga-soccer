@@ -7,8 +7,11 @@
 }
 
 #tabla-general-liga.table thead th {
-  background-color: #00807a;
-  color: #cce2e4;
+  background-color: rgba(0,128,122,0);
+}
+
+#tabla-general-liga.table thead {
+  background-image: linear-gradient(144deg, #006750, #008d8c 50%, #48a3a7);
 }
 
 .clean-navbar {
