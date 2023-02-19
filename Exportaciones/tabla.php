@@ -1,5 +1,5 @@
 <?php
-    include"marcador\get_goals.php";
+    include"\marcador\get_goals.php";
 ?>
 <!DOCTYPE html>
 <html>
