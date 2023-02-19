@@ -1,6 +1,7 @@
 #tabla-general-liga.table {
   --bs-table-striped-bg: #a0c8c3 !important;
   --bs-table-bg: #cce2e4 !important;
+  --bs-table-hover-bg: #1c9997;
 }
 
 .clean-navbar {
