@@ -3,6 +3,7 @@
   --bs-table-bg: #cce2e4 !important;
   --bs-table-hover-bg: #1c9997;
   --bs-table-hover-color: #cce2e4;
+  width: 80%;
 }
 
 #tabla-general-liga.table thead th {
