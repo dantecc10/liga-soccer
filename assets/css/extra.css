@@ -5,14 +5,11 @@
   background-image: url("../../assets/img/grass.jpg");
 }
 
-.nav-item {
-}
-
 a.nav-link {
   background-color: rgba(215,255,110,.75);
   color: var(--bs-gray-dark);
-  border-radius: 10%;
-  border-top-right-radius: 25%;
+  /*border-radius: 10%;*/
+  /*border-top-right-radius: 25%;*/
 }
 
 #navcol-1 {
