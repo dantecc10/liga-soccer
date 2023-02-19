@@ -2,6 +2,12 @@
   --bs-table-striped-bg: #a0c8c3 !important;
   --bs-table-bg: #cce2e4 !important;
   --bs-table-hover-bg: #1c9997;
+  --bs-table-hover-color: #cce2e4;
+}
+
+#tabla-general-liga.table thead th {
+  background-color: #00807a;
+  color: #cce2e4;
 }
 
 .clean-navbar {
