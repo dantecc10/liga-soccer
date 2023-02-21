@@ -14,21 +14,30 @@
   background-image: linear-gradient(144deg, #006750, #008d8c 50%, #48a3a7);
 }
 
-.clean-navbar {
-}
-
-.clean-navbar {
-  background-image: url("../../assets/img/grass.jpg");
+.clean-navbar.bg-white {
+  background-color: rgba(166, 212, 14) !important;
 }
 
 a.nav-link {
-  background-color: rgba(215,255,110,.75);
+  /*background-color: rgba(215,255,110,.75);*/
   color: var(--bs-gray-dark);
   /*border-radius: 10%;*/
   /*border-top-right-radius: 25%;*/
 }
 
 #navcol-1 {
-  background-color: rgba(8,81,7,0.37);
+  /*background-color: rgba(8,81,7,0.37);*/
+}
+
+footer.page-footer {
+  background-image: url("../../assets/img/grass.jpg");
+}
+
+footer.page-footer div.container div.row div.col-sm-3 ul li a {
+  color: black;
+}
+
+footer.page-footer div.container div.row div.col-sm-3 h5 {
+  color: black;
 }
 
