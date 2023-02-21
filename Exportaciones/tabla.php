@@ -1,6 +1,3 @@
-<?php
-    include"\marcador\get_goals.php";
-?>
 <!DOCTYPE html>
 <html>
 
@@ -13,13 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/extra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <link rel="stylesheet" href="../assets/css/vanilla-zoom.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="#"><i class="fa fa-soccer-ball-o"></i>&nbsp;Liga Soccer</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="liga-soccer.castelancarpinteyro.com/"><i class="fa fa-soccer-ball-o"></i>&nbsp;Liga Soccer</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -39,7 +37,8 @@
                     <h2 class="text-info">Tabla general</h2>
                     <p>Aquí tienes las estadísticas generales de la liga, ubica la posición de tu equipo y fija tu objetivo en la posición. ¿Podrás liderar la liga?</p>
                 </div>
-                <div class="row justify-content-center"><table class="table table-striped">
+                <div class="row justify-content-center"><table id="tabla-general-liga" class="table overflow-auto table-striped table-hover">
+	<style></style>
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -58,7 +57,7 @@
     <tr>
       <th scope="row">1</th>
       <td>Team A</td>
-      <td><?php echo $total_goals;?></td>
+      <td>10</td>
       <td>8</td>
       <td>1</td>
       <td>1</td>
@@ -138,41 +137,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h5>Get started</h5>
+                    <h5>Fútbol</h5>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Regístrate</a></li>
+                        <li><a href="#">Galería</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5>About us</h5>
+                    <h5>Acerca de</h5>
                     <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Liga</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Desarrollador</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5>Support</h5>
+                    <h5>Soporte</h5>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Enviar actualizaciones</a></li>
+                        <li><a href="#">Reportar bugs</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Legal</h5>
                     <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Términos de servicio</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Políticas de privacidad</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <p>© 2023 Copyright Text</p>
+            <p>© 2023 Castelán Carpinteyro</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
