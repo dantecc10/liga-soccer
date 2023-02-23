@@ -41,3 +41,7 @@ footer.page-footer div.container div.row div.col-sm-3 h5 {
   color: black;
 }
 
+footer.page-footer div.container div.row {
+  background-color: #a6d40e;
+}
+
