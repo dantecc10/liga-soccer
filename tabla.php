@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="catalog-page.html">Jugadores</a></li>
+                    <li class="nav-item"><a class="nav-link" href="plantillas.html">Jugadores</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog-post-list.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="product-page.html">Product</a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
@@ -37,99 +37,100 @@
                     <h2 class="text-info">Tabla general</h2>
                     <p>Aquí tienes las estadísticas generales de la liga, ubica la posición de tu equipo y fija tu objetivo en la posición. ¿Podrás liderar la liga?</p>
                 </div>
-                <div class="row justify-content-center"><table id="tabla-general-liga" class="table overflow-auto table-striped table-hover">
-	<style></style>
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Equipo</th>
-      <th scope="col">PJ</th>
-      <th scope="col">G</th>
-      <th scope="col">E</th>
-      <th scope="col">D</th>
-      <th scope="col">GF</th>
-      <th scope="col">GC</th>
-      <th scope="col">DG</th>
-      <th scope="col">Pts</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Team A</td>
-      <td>10</td>
-      <td>8</td>
-      <td>1</td>
-      <td>1</td>
-      <td>25</td>
-      <td>10</td>
-      <td>+15</td>
-      <td>25</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Team B</td>
-      <td>10</td>
-      <td>7</td>
-      <td>2</td>
-      <td>1</td>
-      <td>20</td>
-      <td>8</td>
-      <td>+12</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Team C</td>
-      <td>10</td>
-      <td>5</td>
-      <td>2</td>
-      <td>3</td>
-      <td>15</td>
-      <td>10</td>
-      <td>+5</td>
-      <td>17</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Team D</td>
-      <td>10</td>
-      <td>4</td>
-      <td>3</td>
-      <td>3</td>
-      <td>13</td>
-      <td>10</td>
-      <td>+3</td>
-      <td>15</td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Team E</td>
-      <td>10</td>
-      <td>4</td>
-      <td>2</td>
-      <td>4</td>
-      <td>12</td>
-      <td>12</td>
-      <td>0</td>
-      <td>14</td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Team F</td>
-      <td>10</td>
-      <td>3</td>
-      <td>4</td>
-      <td>3</td>
-      <td>11</td>
-      <td>10</td>
-      <td>+1</td>
-      <td>13</td>
-    </tr>
-  </tbody>
-  
-  </table>
-</div>
+                <div class="row justify-content-center">
+                    <table id="tabla-general-liga" class="table overflow-auto table-striped table-hover">
+                        <style></style>
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Equipo</th>
+                                <th scope="col">PJ</th>
+                                <th scope="col">G</th>
+                                <th scope="col">E</th>
+                                <th scope="col">D</th>
+                                <th scope="col">GF</th>
+                                <th scope="col">GC</th>
+                                <th scope="col">DG</th>
+                                <th scope="col">Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Team A</td>
+                                <td>10</td>
+                                <td>8</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>+15</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Team B</td>
+                                <td>10</td>
+                                <td>7</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>20</td>
+                                <td>8</td>
+                                <td>+12</td>
+                                <td>23</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Team C</td>
+                                <td>10</td>
+                                <td>5</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>15</td>
+                                <td>10</td>
+                                <td>+5</td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Team D</td>
+                                <td>10</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>3</td>
+                                <td>13</td>
+                                <td>10</td>
+                                <td>+3</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Team E</td>
+                                <td>10</td>
+                                <td>4</td>
+                                <td>2</td>
+                                <td>4</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>0</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Team F</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>11</td>
+                                <td>10</td>
+                                <td>+1</td>
+                                <td>13</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
             </div>
         </section>
     </main>
@@ -176,8 +177,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-    <script src="../assets/js/vanilla-zoom.js"></script>
-    <script src="../assets/js/theme.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
