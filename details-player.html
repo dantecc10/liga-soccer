@@ -45,58 +45,209 @@
         </div>
     </nav>
     <!-- Contenido -->
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 order-md-1">
-                    <!-- Carrucel de imagenes -->
-                    <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="img-profile d-block" src="https://i.bundesliga.com/player/dfl-obj-0000ia-dfl-clu-00000g-dfl-sea-0001k6.png"
-                                    alt="Jugador">
+    <main class="page product-page">
+        <section class="clean-block clean-product dark">
+            <div class="container">
+                <div class="block-content">
+                    <div class="product-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="gallery">
+                                    <div id="product-preview" class="vanilla-zoom">
+                                        <div class="zoomed-image"></div>
+                                        <div class="sidebar"><img class="img-fluid d-block small-preview"
+                                                src="https://i.bundesliga.com/player/dfl-obj-0000ia-dfl-clu-00000g-dfl-sea-0001k6.png"><img
+                                                class="img-fluid d-block small-preview"
+                                                src="https://cdn.vox-cdn.com/thumbor/glD35jXYPO-Cwrld-CUrePIBXuU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24344954/1246088778.jpg"><img
+                                                class="img-fluid d-block small-preview"
+                                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEhMVFRUVFRUVFRYXFxgVFxYVFxUXFxcVFxcYHSggGBolHRcVITEhJSkuLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHyUtLS0tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS0tLf/AABEIAPsAyQMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAEBQIDBgcBAAj/xABQEAACAQIDBAcDBA0JBwUBAAABAgMAEQQSIQUxQVEGEyJhcYGRMqGxFEJywQcVIzNSYoKSk6Ky0dIWQ1NUg8LD4fAkRHOElKPxVWNks9M0/8QAGwEAAgMBAQEAAAAAAAAAAAAAAgMBBAUABgf/xAA8EQABAwIDAwsCBAUEAwAAAAABAAIRAyEEEjFBUWEFEyJxgZGhscHR8BSSMrLC4VJygtLxI0Ki4hVTYv/aAAwDAQACEQMRAD8AwnW1aktLesq2N6DKnComatVivS5ZKIjeohEHplh5taaxYjSs/E1MI5NK4BEXBNlxletigaUFjUM5orrrJwrX3a+FU4rCyHcrHXgCxHGxA1BPDnTbYuFZYuueRY1YZlFxmK/hm+4Wtbfz042zbRWFQ/WXJBMQXtEg/ONxqvgdQKU6peFE3SjZ+wZnBZlMajS8gZQT3aX91N8LsFAO05Y8lsF8r3J91ZHb+3ZJTmLMQNw0FudhYDlSSDpFONEZlC624ctR51HSKEuvK6ZHsuBb237tQrW8Lj4+6qRstDotgd2627uufcfdascm2WlTMpOYABgeGu8HiOHlX2F2viM2UZrnd/kd3nu8KjpKLLYESJmQ3ItYWt7WZSLeOot+NzFRxsdwLb1vcnjew+qk+ElxJF2sWG5WYI113C1j36mw0HiGuExRJETqwbMubgbAgk79xG4jQ3FrihJKIIOUW0oGc052nk0ygg3O830Gmn+v3UnmFECuKFB1phhJKXnfV0T2pzXJLgtZs/EU+wk1YfB4q1P8FjKbKEhaqKWikkpJBiaNjmopQkJlnr7PQglr7ralRC/ORWpIKI6kmrI8MaSm5VCNaLjSpRw2q5VoSmhViro5K8K14ErpUQiw96J2fAGcXtbfqND3EHQjuoGCAsbC3mbD1O6nsSxwIC5zsdbRuhXThmUkEeBFC98BRtTDaM6P2WBkUNcoO1nZdQrhSbC4vlIO7cKw22tuSOwzAclygLYcgVG7uoyfaGImksn3KJQb3b5pvZAugLHlbgSaVzyoGNyWsNNQtz3kageHKlNEKTdE4YgB5CVCmwGbU5rchu4b68j2oysqsQBcWNrrv3W7xf4d4Uv1knZ1Ki5sD2Qe7hQrYFydLnx+qjEbVF1qMZtBGQMntAM5AHaFpJI836ouO8E76WS7UYjsNl7hob8mHzh4UrOBkWx1B3jXXXfuozBbPMhIkIGl7+YFv9cq6ym6mvSaUAqbX+a28q3Ne7u7q0+x+kglciTKupCXN/ubE2Q6alHZSp5Fr7tUw6J3PZJANyveLXBHjvouHosyka3J3d9hfzOh9KAluxEGu2rY4QxS3ze0uhHHdv8A8+NLtqYLq3K3uLAg9xFxfvpVhs0Ry5jYkbt58+FOceb2BABA15+fw8qgFdF0mdda8NEutUOKaELgvFkIo7DY4ilrVHPTQJSyYWvwW0O+m8GMrA4fFEU3wuPowomVtExVS+UVnoMXV3yqiQrHLs3ur44DurUnBd1ejAUGVHmWU+SHlXy4I8q1w2b3V79r+6oyos6yyYCrvtfWkGDr44YVOVCXLLPhLVRiMYsZAIzMVAUHcLsbv43vr3C1aTEYasf0siySxtb2l17wpf8AiHrS6jbKQUOHGcM7HW5Nt6i2tvQ0sdVDHjv05cr1WcVbfqdT4Xr7ZyCSSzcb24a2NrnhwpWiIXTnYuDMl1UEm19LCwFyx105Dzp7BglRbZQTvq7BYZFQBPG/hxomJr7iTzPDzNV3OlW2NCUrgGc6FUF9SUzHkLai3HfffUcVsQnKi2y3UMQcrkXAPAAdkEC2laFFUEZqYwJARY2qcxUlgQaYcaaW3WA3C24DkBRmHg7QLCwuctwSb630A4Xa1rnXXhU+sjU6aW8z6mmGF2jHbWw7z3i3H/WtQNdVx0WZ2rsZRIhBNprxsN9nfVD3lTl8QrAbxS+EFkVjpdVNt+9QfOnnSnFBYHkRs2VkYH8YOLH1tQGFiuiaWGVbD8kU+ndV3WKBeA0JJHWhaGgsRh6aGpZckjpQ0gppLDagpFpjUpwQymmODWg44tadYKGmpaIhBoi5q+GGr+pqYRBNTh6msNFlKjloUSpEVeNHRBqJFchJQhioaZKZMKEnFcolLZBWO+yAto4m/GdfzlB/umtnOaVbaEZhdpI1kEY6wI25ip0BtrlN7HmLigfomsaTYLk8hvRmy4DmsL3+HCm21sIkuWSOIQkqHMS6xjMLgpuy35cNPGqdhSBZQpvc6WPDcarF0iydzZa661+CRlUIWNtONtBQm3OkIRciWCjlxPjRax5gbEjv5UBJ0XElmY7jov76rt1urLwdAsziNvT+0LgE2Btv0BsCe4jyNMdl9IZbgN2hz4jvp7P0YRzmZBcC17kiwFh37h7q8i2CAT1agZV1sNy6XJ9R6005SIAS2NfN0XthHjw7YhTmKlcwHAMQobwuQPOsTPi8SxDEkXFwATcqONx/rUV1nYuEGQRsLrJGUYEaWII1B0PA1OPYqRspOTT2OyoPEWUkEX3jha/ChaALkI6gJsCsXsCZpsNMj7iim57nVgR6XrUQw2AA3AADyFqZbT2REInyLkDjKbd/HfQ8aU6iNVXqm6q6qqZYKYZai0dWISJSHFYelEsWtajExUmxUNQp1QMUdNsGlAQprTfCiiDlBamcEVXdTX2F3UTajBQQimlqvrKWNi6+TFUGZWObTTNXxehUlrySWpSXNVzy0FiZ6qlloGaW9cTC5oX00t6EnXMrKdzKy+oIqZNSWOlG6cLLKdIDKHYj2dGAGi5bWUEcgNL91NMXs+OJrJ2snYDkDMRxOnPfbhTtQFOZgGAVuyVBOo4E7hzpNKwDKqgKmU2GbPY7954W9LVTe0tsrmYPEhWYVrHWmEOIG+lGI0GlDPiCLAb6W2V2da0YpCOVqXjaECkvJMsYzWsSRfQcBv30kSY7iap2jgYZdWAvzvrTG3UyFroNvYcsuSQMAD2hqL3O73U/fGRS3CEMQquRxXMNCe4kNbnlPKuN7Owgjm6uxMTsM1iVJUcMw0Hjv766zgsTAkdogAl7kEm54dokkk2AAuTYAAaAUZCAnRfYqayEcACaFw84NUbWxNkfu0B5ghbedmA8QaAwE9HhtqRXiyfg14xqqOSrgL1bhVUNOKVzwEmn/U1W2GFQQiBhIY8JrR0ENHdRU0jqIRZl7AtE14iVO1GgWW66i8MKUwnWnODpDSr9SwRi18xqSiosKcqTrlUOtCvFRrCqnWgKkIaOGiRDUoForJXALnOQJSkON2UqlnXS7o445WGYOBf5jDL2eBB51qJI6X41OyRUVGywoaboeFncQ/Cg0HaU8j/lU8dobelCdaRrWe3RXSF9j8M7feyA3C5Nvdupemz8bvy2I/GW27hY330wgxfaGl6aF5G9gjzpoPBS2+1J4tnbSNlXLbvbMPQrTrAbF2hlZpeqRQCwBDZ2A4ZRYLfXU8t1Qw+AxRP33KOQPw0rTQxPHGS75hY+F7fGuN9iIwBqe1KNrzZcOl97FB6XY/sr60Hs7EUJ0ixNyiX9hbn6Ta/shfU0FgZ7Gn0BDQqdUyVusJJemkNZvZ+I0FPIJqtKsmAr01SJKmjVCkKQSpZamorxq5EF4K+vUGaoZqGVKy0UdM8KNKiMLai4Y6W0GVYe+VNTXxNelagTTUjVQc1BmqMjVXS5RorD0wVaWwGj0eiagcoTLSvEimj0NLBeiSwshtaD51KZIuVa3HQWLLbj7iL/AF0tGzgwsTbf6VmRFlpTN1k5GKm9GQbZKW41XtjZ7RnQ5lpWjd1MGiCLrRfygbgba062XjnxLCMMbcbcB9R4DvrHjCPpuF/W1dF6JYfIqi3G/nz/ANcqFxARgSst0sw4TFzqBYBwV8GRWHxpMJMproHTDo880nXQjMxVQ0egJCiwZL+0bWBW99NL7q53i1KsUYFXG9GBVh9JTYjzFWaZkSFWeFpdlYnStDhp6wWzJ7aVpsHiDarAcq+VaWOSiI5KTRT1cMTUSjDU9WYVF5xSF8YanHiCaHMpDE0aao9bQWavs9DmRZE7bDVDqaZslVlKdCUSl7pQkyU2kSgZ0qCoBSx6gKsnWqxSjZNBViUZCaDio3DiiCFyIRKn1NfNiESxkcLfUCzO5HNY0BZh32sOJpumHVYDiCwNl6xSLhRHowchtQ2S536criizBdkcACRY6cepYjaJ+6MOFyPT/wAUBOw3X1pttHDkE9x1/wBeVIcWttbVmEkmVogCAlePOY5TralbYSzC3OmxS7XoyLDi2oqZgLoCAwSF3AtoN9bTZ7AAW8KRYdQNwsO6tFsXASTHKg3WzMfZQc2tvPJRqe4XIEAuMBSSAJK0Wx8J1siE+ygDN5G6r5kX8FPOmvSXALPGFOFixOt7SgWA4lWIOVt1rfVRWFhSCLLeyqCzMxAvYXZ2O4aDwAHIVx/pht9sRiWkUsqKMse8EKDcNpuLEk87ZQdRVwkUWX1KXhcK/G1oboNpmOqxGp4gxJmxTLaH2Poy5OHd4HNyMPOpcHuimjLZxoT89gN9qBbYssShmS6cJEIkj0Nvvi3A87VTszpniouw79dHxWUdaNDfQk5gRw7WnKtlsrbeGxFmVWjmNs2SUxuxvYBZbhZTuGWaxOu+1CyuDYePyFbxHJVSmCXN7WmY6wYMbyQY3lZWNdKsCVp8Rg8MzENPEjX1WZPkk1+ZYZUPiYm8aEbYgIzQSwzjiI3V3HgF9sd4sfxaaHA/As59JzNfIjzASLqaJhhoxIBqOI3jiO4jhV6Q0WWUskjVDCKpdTTFIKl1NdlQ502aqXr4SVW7UyUBCjIaEmq53qiQ1xKiIQM4ofLRpgJ10VeLuwRB4u1h5C57ql1WGRc8kxdQ3aMKEoDyEz2Rj3DXupL3Aap9Gi+p+EE9h9AgYrk2AJPIC9TfbEMOjDrX4RxsAoPKSXX/ALebdv4Uo2xtkSEph42WPgTq5uLZiSbC44J76VrCRvuPDU/nHd5Dzqq/EkWavQ4XkJpGasT1CPEifDwNlpJ+nM69mGOGK51yJc35s7Gx/NvXRtlsJsLEWAIlhTOBoDnQZgBwGpFcfwOzXkbLGhYj2rdogc2YmyjvYgV0HortNIEGHlniJv2MhLqobUq0tsgN72APG3Kiw9Yz0jbwS+WMBSawcy3pDUCS4iNTqbRt43SzGbNkRWSW5ZWKq5t91RQMsmnEg2YcGVuFiUOLw1xurrk0QYWYAjkRcUnxXRuBjudfBtP1gaa/DmeisOniQPxLj3yVlOm6jEQ2F+JsPHgB310qLoZhr6mVu4uo/ZUH302wWysPh7skaJYaudWA43dySB50Iw7tqJ2IbslYbY3RGWQhpbxx7yDpI3cAfYHe2vJTe43uCwSxIFRcqrfRQT4niWJ56k1n9tdM40BXDgSN+Gb9WN+o3F/ybD8asNj8fLM+eWQs3C9rKOSqNFHgOGt6g16VKzblaOH5IxWK6TxkbskenzhK1fSqbG4kdXFh5UhvrnCo0lte1mYZVv8AN3nj+DWbk6K4sDWB/IK37JNACIHUqD4gGrY2ZNUup/FuvwtVR1VrzJnvHsvQUMHVwzMlPL9jpPEnnPTgICg/RTEH/dpvKJ1+qp4XodiwMxXql/CmZEHgbsGt5VZ8vl/pZf0j/voOa7HM2YkfOJJP5xuajMzj4eyblxJ2tH9Lj5uHetjh8fiEQRzS4HEjgHmjkPgM7L6kmg8VtfD3yYjZ0PV788BTyIKWB/OFZjrQN7AHvIFSjm5NfwIPwoufJ09/MJI5MaCXO13gOZ+VwHeCtbitp4fIphad+HVzdsIu+4kN5FO6wVyOa1VgccL2Yj6VgLfSy2U+IAt330QJPerElqfqHgz4bEk8k0DTLCCZ2nUdRj/O2VtAtfWrPbN2oYzZjdOI35b72X4kcfHWtHnT+kj/AEq/vrRpVm1BOi8xjcFUwr4NwdCAfHWD76oTrq+aal7S1W09cq+VGtLUlmhUK0rszOAUhis0rA3tnJ7KX5b9N/AJsXitCvr+6g8Ni3QWV2XeCVOVrE3y5h2gO4Hjreqj8R0iAt7C8kZmB79TeNLR1G83Np2Ag3Wu+UEavhsJBYdh8ZJmktz7Qz/k6DvpHtGDDysHxG0OsI0CpA7Ko5IB2FHfa/Mms+TvY6X3k/WeNEwYIsAzNGin2OskWPP9C5zMO9QRSudLrAfOyAtIYFtGHuqZeMCeoOfzhk8InwRWLlwUHaRZZ24dbZE7jlSzt4XA8alhukhbfg8Bp7P+zbv16VybJLtfr8PbumBt+QBm9FouPq4R2e234TL2R9FG3n8Z/wA0EXoSXN4fO1M5qhUAmXkbyf2AHZ1Ao+dsRMt2uIzqNBDhwPxcxWPzJJ76GOBA9vERDmFZpT4fckZf1hQUkju2ZizE/OYlm9TrUglAXA3PifnmrFOi5gytIaNzR7yD15etaDZu3RhxlWeZ1AFk6tAnlnkZgO5Qo7qPl6enhhx+VKfgI6x7MBoSL+Ir5Iy3sgn6ILfAUba9QCG+/nKr1eTMM52eq2TvNu/LlC08nTyb5kcI8c7f3lpbj+kk8tus6tgDcAwxsAeYEgax76Gg2HiTqMPN5xOPiBV42BMPbVYxzlkjj9zNf3VOes4alLbQ5PomwYD1gnxJKHG05eHV+UGHHwiqQ2zP/SfqR/wUT9pP/kYT/qF+qpRdHJHvkkw72sDkkL2LGwByIbX76gCrvPemPfgQJeGdrR6hCHa8p3lT3NFC4/WjrwbRa1jHAf8Al4R+wophhtiRAnrsTCtmClUkBNzcdq+XKQRyN7akVKLo8HuUxEJjDWzAnQAXZiLBRbfbNu48+/1N/jPqg+pwTdgA35CBfcQ0T2e6AbaY44fDfomHweqn2kd6RQIeYgRz5GXPajJNiAXvisJoSGtMzMPBRHc1Wux19oYvCW75HU+hiuK7/UTg7CxOvY4qlNs4gezMy/RtGPRAKC2htKWQBZJZHAN7PI7i+69mJF9T60yl2GTYJiMI/cJwG9HUXpBjoyjsjWzKbNYgi/HUaHyoXCoNZ70VH6VzoptbIvYAHr0Edi+ik1olXpeptRKNS1bR2fSoacqijV9XLhZPHehnb3XPpUHmr3A4Vp3MSEBurkcXF75QAFGu8llHde9bVRpgwvnlBzOcbn/DInq2pdiJDVuExUaoS0edr3F3YIBbTsoAxN737QG6lyT5lHOou+lrgDmdPGsYWX0F1PN0T4EjxEFM22yyJmSOGPTTLGpYk7hnkzv6EUrzObvIzNLLvYm5t4mmOF2HNN90y2iHsu5EUd/wi7kXH0b1LFYqGMKIkdpwcqMWVoWKntSKhS+UHcCbWIJuaM5iJJskMfRY+KYBdoYiR/MdY7+oq3Z+xJgobIVXeZJPuUajmXksCPC9FfayK/axcFv/AGusnPuQD30oaV5vbkeQA3LM5cs3EjMdFHdR+zMMZ5VhRgCxsWNyo377cTYgDS5Fr1wykwBPzhCGoarWGpVeGgawNO10/l4QjP8AZFH8/Kf7OJD+2wqQ2pGv3vCw+Mgec/rkD3VVj9iyRSPGxSynRmeOMMjaqwDsDzBtexVqoODUe1NCPAyP6dXGw99SczTEAd3qlUzQrNDs5cDxd4tbAnrEokdI8QPZkCDkiRxj3JVMm38UR2sRL5OR8LVV1MPGb82It+2yVRipcOoseubvBjT9Wz/Gul51d4/umCjh2/hpD7IPeQPNDPj3du07t9J2b4mr4hy+FVYVsPvCSnuMkfvIiufK1HDHqo7EMSnvVpPdK7D3ULhe58/ZPY8gdFpH2j19FHA5TIOtLLHrmK3zAWPsAK1ze1hY37t9NGwyNKww7Ply5DbL280YZo4Tc3JAJZjqtj3AqhtJvwIR/YQ/AoQPKmeDllbqyFTqcgkxC5IlVmE7pcqq7hkgzMoAC3LEU6gxpO/5H+VlcpvqsbnzRMiCZboXaFt3GIbxI3Jns/A3VCqdtkQujqCysGJkBkyO7ArlAJyjUMBZgBXtHZp7VlCS2EfZUJ7Q/nSpCmKR7IoF2FtSe0EeymY/fJViXeI07TtZyVGVdSSFgFuOdhxFINsQWki6qUiOIxmUF2DOiFWMptoUCxWBawLO1jfQ6FRgDY14fLd3eF5mhiajqpeHZdTNzpoDqTug9ZtKU4/FxGFEjjIk3ux1A9pmQM1mvfLrY6XUG1JJJTflRs215BfRBx+9QG1+FylzyoGfbGnaigbv6lUPjeLJr31lODS43t1L2tFlSkyImbmXkmTqJc0aHihsTidbE3FVZ9wFRxe0oCusRRspylGJQnhmWXMbfljwoBcUAdTqd3if8qjKnCrMggiN8ehKZLJdu4a+v+jVsUlzS1JLDxomB7C/P4UKOUxSTUDxP1fXRF6BwpN9d53DjlHdV/WColFoqMRtG1aH7HW1EibGYuS+SCGJVtvZ5ZH7C34kxxjz1rGyxXrUdA9jLOk6sX9pVstrAML9Y99CFZAQN5Om4mtqoTlsF84phuYZ5jbGsbY4pGMYHJkChQ5Jyjcpzm6juG4dwq7B7UaB1kTLmAK3ZQ9gxFyA2gYWFj486F2jg2w80kLW0cgEagNvK+BuCL8DS3FTW3+B8DuPkaybhy+gRTfSA1aQO0funj7WkmkaaZy7g2QMcxA7huXyAqeGwoDZsQSjuMqRKA0ixDffMwyE343bf2dRSCKfIpbORIQVAU2YW3uxG5SuYAXub33b2Ww4CxvpZEW5JCqM5LakkAX9TbS9SRtNykZ2kFrSGtFrAC/dA3WFzYaAnTYGQFljghUEkC5Q4hwoIu2S2XQG5sg8a1mElAw7xhZZo3KkSNaOVGChs7qoLqQQjIApcXAKqADWOweJSI5lJdrWIAUIO2rg/dELEhkUghFGm81dJtVmsLBsu7MWkN7EZjnJUtYkZst++nUajKbbm/D5CysfgsRi6o5sdEbXG5O2ZBfw0jaNStBtw9e0azywRMhlUSAXzgDWzFwACQhZQDlZcoJsTWZh2dOwDdTKLgEfc5LAka2JUA158vkGgcr3KSmvgtqrGHd9QhbvCs5PoDS6tVtTQH53q9gMDXwjSHvEboMD8uu6w7bqZ2fJxyL9KWFPc7g+6gMVgGJ0eE/8xD/HRzbGxJHZgn/QyD+7QkuwMXxw836KT91CG/8AyfnYrRrN21WDw/WVZg8EFF3ljA5K/Wkn+yuvqwownDgbpn7wyQg/klZPjX2C6K4txmaPq1HzpiIlHf2u1+rRv2rwa6SY0FuPVQtIngHGjeNdkdujrt5+yX9VSJgPLjuYM0faCR2mEu62AadVIe8zKD7oLUTg9rJHbKkgAYtrIGsxXLcAImb5pyk71UgqReiGw2zv65J5QN9YqJw+zf6ziP0I/dRtzMMgt8EusaNZmV9OoR/LU133+b7IiTpBFlyhjYZOyFJDAE51aNpOrGZbDskC9zrupZjNuZhkdCyXuPujK28mxOUqFubhAoUaaGwNErhdm/1nEH+yA+IqvERbM3HE4lDzaJWH6i001XutmaOo+8qnRwmFpOzZKpje11uPRDT5xsg3Sd8Vhze8cq+EsbD3wg++g5EwzXHXSJyzRr+0kh/ZptiOj2Fk1h2jh+5ZbwH33+FLNp9D8QgDq0Uo4dXMr38AbUsUn/w/OwqycfhpgVS07jI/O0rN4yBst1Ie2cXU62GtypswFr7xS6CUvL3LrRm08DLE7xyoVKN2gRe1+ZFxyofZ0PvNz9QqbAFLa51Wo3K6RwjZppx6upM0bif/ADR8CnQnXXdztwoXDx/OO7cP3CmOHXjSCthtrrZYYBcVFhiqyQOsC2yi8nWxIWnU2uGDM7ZwdFjsNBQv2own/qC/nRfupfhNsTplVJGyqCACA6hT7SWYHQ69ndRX24b+hwv/AEsP8NN5ymR0h37OGqx3YPFsI5t8WAJabuInpOBGpkbT16QrbD1p+hkhiimK7+thJ8CkgHvHpelZjrRdCMMHOIj5rC1uYUzA7uWZa0l49ZD7I8XVY5pd8cyRs4OouY1UH1RvWs5iYlYXvbgL7j3E8R4++uhfZQwS5oiR7cTIedonuu7/AIp9K50qFbqdR8RWZVs8r2vJjs+EYdREdxI9O+UuICOnW5goPMKSm6wYgjzsad4faBldkRbL1q5UQEgdkjQakseZux91KcTEQNL5Dw4U26Lbc+TI5hI6+SwZ2ALQopYfcyfnNmUkm47O7SiFxdRVDqVQFrZcdJJjTWfWJiwWxwuwBEofGzLh7i6xgZ5mHMRrfL4nzAoqTa+DhW8WGMt9zYhg2bvCJdbelYz5cb5jd2Y63JJZjuzE6movjetkOXNJlOULGkkh003IDa5oATMMb6n52JrmQJxNXsByN6tQT2u7Fsx0yl/m4sNF9CGx9S31UPP0wxh/3hh3BUX+7STDbIxklimCxBB/CQRD1mK0zHQ3aLWth0X6eJQH0QNR5a53qsanJdM3yE9WY+TlTN0mxZ34ibykYfC1DDpFi73+UT/ppP302/kFjyNfkq93XSn/AAaT7f2JNg2jSbqbSrKylGY2MZS4JdV/pB6Vxp1QJPmjpYvk+o8U2BpJ06H/AFVcmKkmYGV3c/jMz28MxNvKpzPrU9j4NnuwsFG+RjZF1sLkA6k2AAuTwG+iGwMV9cVD+biD/gUnKTf54rR5xjOhu2AEx2AGPBAE1Xmpn8gg/rkXlHij/g1D5DD/AFpf0M//AOdRlPwj3Xc8zc77H/2oG9CYmPMptwptJg4P60v6Kb+Go4PZ0NyBjIiTwKYhR5t1JAqcjuHePdR9Qzc77H/2rIyaaXqiUErbW4131ptodHpNShhcDU5J4W9xfN7qBHRXFH5saj/jQX9Osprabt3gqlTF0RI5wfcB5keMLMz4twcwdg/E3Pa8efnR+COgJ46/5UVtPoxiApJj0HHMp9CDr5Uv2WpJ7QNxp9VMeDkuqeEqM+pIYQZGyPRPoBc68KZwrpQeGj0BbQU7w+y5m0jgmbvEUlvULaqsE2C3HPawS8gdZA80PFHVvU0yw/R7GcMLJ5gL7mINX/yexn9Wk/V/irjTf/Ce5J+sw/8A7Wfc33Qxap4XHyxZjDIY2YBcwAJsNbDMCBrxtel3X1fhBnJtvytbx3A+RN/KteqIY48F4PBdLE0xE9IWO7ahNoSO7F5GZnO9mJY25XPDu3UseKm80gHtdk8iaVyTLfeLeVY0r6I2mWiALdSDkwm+27W4rPQrllXXRrj3ae8VpZcStib8Ky2076Eb9/cvEU6lcwqWOhrA+Li60mzFUteRiqqCxYKXOmgsoIubkbyAK6j9jPFIMJIqO2SLETatZSFZUluQrED22O81y9NqCTDWjQImZVYbzIyqSWdt5OugFlXNoL61pOis9tm7SQMAzRqU1sbyxNASPRafh7PLVkcrg1cK2rxFraGYOkyTG0wmuG6VzYnFQsrNHA+IhEaKcrMhkHbmO9iw+ZcKA1jc61q+ngvs7E90YPpIh+qub4NxHicNyGLww/7yj666R05U/a7GDiMNMfzVLfVTqFQvaSd/sszlbCsw1ZlNgtlE8TJBPgue7E6Vy4KQlndsOGPWxMWfIpP3yLMSUK78gNiLi17GtP8AZKldHwc0TlSPlSZkO8OkT7+I+53rCNs2V20ikYFjqqMw391O8S2KxGFwOH+R4pWwoyvI8Z+6WheIZFALHTIbm24+NKpPcabgVo43CUaeLpPpgQT0haLEXI0Ftdlt5Q2I2hI65pJGcjdmZmA+jc6eVLlp3s7YzzOYFilaWNQ8oDxRquZmCgl7ktZLnQWJI4VftTYZwoR5oHCPIsd1xETMCys1wvVWOinjSeYeRm9VpHlPC038y3WwADbXiI0EGbRbckBrx6a58J+DifN4R/h0RsjZPysy9RD2YnVCZcWEYlkD6BMIw3HnQNpFxgEfOxOr45lBueo1wGmg48eCzjVWuhvWl23sj5J1RxGHJWVzGDHjFkYEIz3yvhFG5TxoAnBnjiU8oJPdmSpdSLTBIUUOUKdduZjXETGnsSdu5BuqmzHUjcTrQeJYHSmHV4U6DESDueEfFJXrxdlwHX5ZH+VHiB+zCfjQCmeHePdWRimm3S+yoP0rM7Uj7GlVdDwJJ0w7kqhdRcWuA8gU2vppe+tOsdsuNiQuLgNvwuuT/wCyIXrP4eBoZyFdcx7KsrBrHMLEeF/dT2NOUysrEV2muHNcQYI0I2HeBtg9i/Rmxej+HwwvHCoI3yN2383bVfKw7qPbbEANmxEVxvHWIT6XvWBw07SjNMzTNzks3mEACIfoqKYQTHvHduq1z4FmiF5l1Fzjme6T3+JWgm6ZbPQ2bGQg8s1z6AVX/LzZv9bT0f8AhpRtLZ0c6FXANxoTwrFfyKPf60JxTtyluGaRcnwSX5VWp+x5g0xGJZJLlViLlQSMxDoApI1y9q5A32HC4OA601rvsdOesn3gdWgJBKnVyQtxqVOUkj8QDUEitOu0CmSVQw5cKgyGDv7F2MYXDxDKEhjA4ZUTzqg4iH5rw+TR/UayvVqNyqPBVHwFUztpWeMRwVz6YE38lo8WqkrfqyLg3OU6Dje+6vz/ALYOclvwmJvzLXOndrW+2kiEG6Ib81U/EVidt4VFvlXLYX7JIHoNBSqj+chaeBy4YPJvIGltEbsXC4dMLF1skmZi7lI4xpmewzO7rwUblNO9gbMhxc3VwxxIVjMgknUzydiRV7AiMIW2dTrm8azzwt9ziW5Kxxiw1OigbhrT7o08mBnjnnhmVLSRMOrOcq8ZIyxmzN2401AtzNJpuzPki3zatTGUTSwxY2o7MAIExukQIJtIvJTLpHgWwk0KCRXDyYeU/wCzwRkGPFoGCsq5wPYOrHxronS2LNgsYvPDYkesL1zLpzt1MSElEbwiGNsnW5M0jGSGTRY3bIF6sm7Hjurq22lzQYgfhRT++N6uUyLx8svN4tj2sp5wQ6DMggzmde+touue9AsHHi5sX8qBmKrhcvWvI9gwmBsC34i+lX/ZD6PYSCLDNBhYY2OJyXSNVZg2GxBykgXNyq6cwKzGx9sy4ZjJhGVRNFAHEsfWnMgc3UqygffDvBNXY7bmIxLRCeUMsbmVUWJI1EgjkVWupzGwdrC/rSBWYKeUm8cVq/8Aja5xfPMYAzMHf7Rax0lPOhe08PgsTiVxci4YmHCqiy3iLANOTlVgDYXX1FF9OdvYbFJhocLOkrnFBisZLdlcNiLk6W3lax8cb7lDeCg/UK9lwOJYWySkcskhHpagbWcGZMqu1uTWOxP1DqomQYi1v6vZXHZU/wCAf1R8TWg6BbagwgxUWJkEbmdCFIZrr8njF7oCN9+NZVdiYj+gl/RSfuoqLYuKG6DEeUUv8NBTcaZkNPzsVjGUW4unzb6zQJmw4EbXnen3T3bEGMGFiwsnXOs0jlVV7hRh5Bf2RxNZeTY2JUawSj+xk/hqeL2fiLduOUL+MkgHnmFLI3CNoQCORAP1UNV+cy4R86keAwpw9MspPDpM6cBtDuCvGBdfaQjxBHxFUYhwOVGjasw3TOPCV/qNRk21ibffp/0spHoWsaWcivEVwPwjvI/SUkYX50sQ2ljPfWpO1Z95IJ5mOMn1K3pFtbFStq3A39kA+oF6awtB18P3VHFMqlklotxJ/SPNdM2HJdAeYHwpsGrN9GZ7xr4CnvWVK848QUxw0mmtEZ6VRvVnW0JKELkCRmt50BgyxytxaRV8kXT3yNWOhrb9F/vC/Sf9oj6q3MeYo9o9/RY+COat2H0909kkoPESaVNqGxO6sYLYCU7Qesjto5mycyq+pt9da3G7qSbIwqS4/DxSC6PMgYAlbi44qQR5GibMp8gDpaKvaO1ZmJHWOF3ZVZlS3AZB2fdV2wNmSy6xRsy8SobILc2Gi+JtTrpvJ8kxQjwyRRizaiKNpOH86yl/fQEeLlkRjLLLJlF16yR5LHuzE2pNUZbOMn5tPsvQYNz6rOcoMa1p+fhaAP8Akg9p4FpneNHieQq0ccMcqTyFiLWywFwuu8sQBxNdwchlKHcVKEjXQrlJHPjWZ+xPGDg5QbkDEzaXNvZjOvPed9IvsjdKcVhVJgkVLX/mom/aQ1epMDG22ryvKWIqVqxbUjokgQI29Z3b0lfo9NhoWbEQz2hQ9Y8SwSIUjFusVjiFaxAzWKAi9rV62LSEF8M8yyG6FyREbaMVTqWLDVUv2u7nSPZnTDG4tXixE5aOQFHVVSMMrXDKerVdCCRROLY2Hi/7bD6h6VVrta2MojXf7r0HJvP12k13SLQIEbdRlE7FdL0gxJ/3mY/28x/vUP8AbWcn79J+kkP96gmqWHpGY71p8xS/gHcPZM48VKd8jnzavXxDD57epquPdUMRUSTtTBTYP9o7grF2tMvsyyr4O4+DVevSPE2t8qn8DLKR7yRSZ6+WpzO3lAaFI6sb3A+YTk9JMT/Sk+KI37SmhX25LfVYG+lhcMfeIgffQZqlannHbz3pZweH2U2/aB5BNztrT/8Anw1+fUJ9enupJtnaLMMvVw2O8DDwpu/HRA48mFEClW0t/lTGVHzqkYjCUG0yQwLU9EsTpa1uQuTbuuda0rzVj+h+8eA+NanEVxKwa7QHo3Dy3tRt6X4GjqCEoBf/2Q=="></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img class="img-profile d-block" src="https://cdn.vox-cdn.com/thumbor/glD35jXYPO-Cwrld-CUrePIBXuU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24344954/1246088778.jpg"
-                                    alt="Jugador">
+                            <div class="col-md-6">
+                                <div class="info">
+                                    <h3>Lorem Ipsum</h3>
+                                    <div class="rating"><img src="../assets/img/star.svg"><img
+                                            src="../assets/img/star.svg"><img src="../assets/img/star.svg"><img
+                                            src="../assets/img/star-half-empty.svg"><img
+                                            src="../assets/img/star-empty.svg"></div>
+                                    <div class="price">
+                                        <h3>$300.00</h3>
+                                    </div><button class="btn btn-primary" type="button"><i class="fa fa-soccer-ball-o2"></i>Boton</button>
+                                    <div class="summary">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue nunc,
+                                            pretium at augue at, convallis pellentesque ipsum. Vestibulum diam risus,
+                                            sagittis at fringilla at, pulvinar vel risus. Vestibulum dignissim eu nulla
+                                            eu imperdiet. Morbi mollis tellus a nunc vestibulum consequat. Quisque
+                                            tristique elit et nibh dapibus sodales. Nam sollicitudin a urna sed iaculis.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselImages"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <ul class="nav nav-tabs" role="tablist" id="myTab">
+                                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab"
+                                        data-bs-toggle="tab" id="description-tab" href="#description">Description</a>
+                                </li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab"
+                                        data-bs-toggle="tab" id="specifications-tabs"
+                                        href="#specifications">Specifications</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab"
+                                        data-bs-toggle="tab" id="reviews-tab" href="#reviews">Reviews</a></li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active description" role="tabpanel" id="description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna,
+                                        dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo. Lorem ipsum
+                                        dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <figure class="figure"><img class="img-fluid figure-img"
+                                                    src="../assets/img/tech/image3.png"></figure>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <h4>Lorem Ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna,
+                                                dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-7 right">
+                                            <h4>Lorem Ipsum</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna,
+                                                dignissim nec auctor in, mattis vitae leo. Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <figure class="figure"><img class="img-fluid figure-img"
+                                                    src="../assets/img/tech/image3.png"></figure>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade specifications" role="tabpanel" id="specifications">
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="stat">Display</td>
+                                                    <td>5.2"</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="stat">Camera</td>
+                                                    <td>12MP</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="stat">RAM</td>
+                                                    <td>4GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="stat">OS</td>
+                                                    <td>iOS</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" role="tabpanel" id="reviews">
+                                    <div class="reviews">
+                                        <div class="review-item">
+                                            <div class="rating"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star-empty.svg"></div>
+                                            <h4>Incredible product</h4><span class="text-muted"><a href="#">John
+                                                    Smith</a>, 20 Jan 2018</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue
+                                                nunc, pretium at augue at, convallis pellentesque ipsum. Lorem ipsum
+                                                dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="review-item">
+                                            <div class="rating"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star-empty.svg"></div>
+                                            <h4>Incredible product</h4><span class="text-muted"><a href="#">John
+                                                    Smith</a>, 20 Jan 2018</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue
+                                                nunc, pretium at augue at, convallis pellentesque ipsum. Lorem ipsum
+                                                dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="reviews">
+                                        <div class="review-item">
+                                            <div class="rating"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star-empty.svg"></div>
+                                            <h4>Incredible product</h4><span class="text-muted"><a href="#">John
+                                                    Smith</a>, 20 Jan 2018</span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue
+                                                nunc, pretium at augue at, convallis pellentesque ipsum. Lorem ipsum
+                                                dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clean-related-items">
+                        <h3>Related Products</h3>
+                        <div class="items">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item">
+                                        <div class="image"><a href="#"><img class="img-fluid d-block mx-auto"
+                                                    src="../assets/img/tech/image2.jpg"></a></div>
+                                        <div class="related-name"><a href="#">Lorem Ipsum dolor</a>
+                                            <div class="rating"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star-half-empty.svg"><img
+                                                    src="../assets/img/star-empty.svg"></div>
+                                            <h4>$300</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item">
+                                        <div class="image"><a href="#"><img class="img-fluid d-block mx-auto"
+                                                    src="../assets/img/tech/image2.jpg"></a></div>
+                                        <div class="related-name"><a href="#">Lorem Ipsum dolor</a>
+                                            <div class="rating"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star-half-empty.svg"><img
+                                                    src="../assets/img/star-empty.svg"></div>
+                                            <h4>$300</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="clean-related-item">
+                                        <div class="image"><a href="#"><img class="img-fluid d-block mx-auto"
+                                                    src="../assets/img/tech/image2.jpg"></a></div>
+                                        <div class="related-name"><a href="#">Lorem Ipsum dolor</a>
+                                            <div class="rating"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star.svg"><img src="../assets/img/star.svg"><img
+                                                    src="../assets/img/star-half-empty.svg"><img
+                                                    src="../assets/img/star-empty.svg"></div>
+                                            <h4>$300</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 order-md-2">
-                    <h2>Thomas Muller</h2>
-                    <h2>
-                        <small class="text-success">Info 1</small>
-                    </h2>
-                    <h2>
-                        info 2
-                    </h2>
-
-                    <p class="lead">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et consectetur officia, nemo
-                        voluptatem asperiores molestias soluta necessitatibus libero, recusandae adipisci fugit. Odio
-                        deserunt natus perspiciatis, numquam laudantium adipisci! Dolor, aspernatur.>
-                    </p>
-                    <div class="d-grid gap-3 col-10 mx-auto">
-                        <button class="btn btn-primary" type="button" onclick="location.href='#'">Boton 1</button>
-                        <button class="btn btn-outline-primary" type="button">Boton 2</button>
-                    </div>
-                </div>
-
             </div>
-        </div>
+        </section>
     </main>
-
 
     <footer class="page-footer dark">
         <div class="container">
@@ -147,3 +298,55 @@
 </body>
 
 </html>
+
+<!-- <main class="block-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-1">
+                <!-- Carrucel de imagenes
+                <div id="carouselImages" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-profile d-block" src="https://i.bundesliga.com/player/dfl-obj-0000ia-dfl-clu-00000g-dfl-sea-0001k6.png"
+                                alt="Jugador">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-profile d-block" src="https://cdn.vox-cdn.com/thumbor/glD35jXYPO-Cwrld-CUrePIBXuU=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/24344954/1246088778.jpg"
+                                alt="Jugador">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselImages"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselImages"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-2">
+                <h2>Thomas Muller</h2>
+                <h2>
+                    <small class="text-success">Info 1</small>
+                </h2>
+                <h2>
+                    info 2
+                </h2>
+
+                <p class="lead">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et consectetur officia, nemo
+                    voluptatem asperiores molestias soluta necessitatibus libero, recusandae adipisci fugit. Odio
+                    deserunt natus perspiciatis, numquam laudantium adipisci! Dolor, aspernatur.>
+                </p>
+                <div class="d-grid gap-3 col-10 mx-auto">
+                    <button class="btn btn-primary" type="button" onclick="location.href='#'">Boton 1</button>
+                    <button class="btn btn-outline-primary" type="button">Boton 2</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main> -->
